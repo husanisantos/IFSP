@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="husan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-17 07:03:55 "/>
+        <attribute name="created" value="aHVzYW47REVTS1RPUC01SThJTjk5OzIwMjEtMDYtMTc7IjA2OjUyOjQxICI7Mjc2NQ=="/>
+        <attribute name="edited" value="aHVzYW47REVTS1RPUC01SThJTjk5OzIwMjEtMDYtMTc7IjA3OjAzOjU1ICI7MTsyODc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salario, diaria" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe seu sal&#225;rio:&quot;" newline="True"/>
+            <input variable="salario"/>
+            <assign variable="diaria" expression="(salario / 30)"/>
+            <output expression="&quot;Sua di&#225;ria &#233; de R$&quot; &amp; ToFixed(diaria, 2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

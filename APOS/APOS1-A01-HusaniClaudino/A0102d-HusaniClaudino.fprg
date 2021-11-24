@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="husan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-17 07:24:08 "/>
+        <attribute name="created" value="aHVzYW47REVTS1RPUC01SThJTjk5OzIwMjEtMDYtMTc7IjA3OjA1OjMxICI7Mjc2Mw=="/>
+        <attribute name="edited" value="aHVzYW47REVTS1RPUC01SThJTjk5OzIwMjEtMDYtMTc7IjA3OjI0OjA4ICI7MTsyODc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="media" type="Real" array="False" size=""/>
+            <declare name="valor1, valor2, valor3, valor4" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vamos calcular a m&#233;dia aritim&#233;tica de 4 n&#250;meros&quot;" newline="True"/>
+            <output expression="&quot;Informe o primeiro n&#250;mero:&quot;" newline="True"/>
+            <input variable="valor1"/>
+            <output expression="&quot;informe o segundo n&#250;mero:&quot;" newline="True"/>
+            <input variable="valor2"/>
+            <output expression="&quot;informe o terceiro n&#250;mero:&quot;" newline="True"/>
+            <input variable="valor3"/>
+            <output expression="&quot;informe o &#250;ltimo n&#250;mero:&quot;" newline="True"/>
+            <input variable="valor4"/>
+            <assign variable="media" expression="(valor1 + valor2 + valor3 + valor4) / 4"/>
+            <output expression="&quot;A m&#233;dia &#233; de &quot; &amp; toFixed(media,2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

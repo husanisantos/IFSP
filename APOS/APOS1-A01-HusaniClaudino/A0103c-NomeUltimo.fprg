@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="husan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-18 03:06:26 "/>
+        <attribute name="created" value="aHVzYW47REVTS1RPUC01SThJTjk5OzIwMjEtMDYtMTc7IjA3OjUzOjUxICI7Mjc2OA=="/>
+        <attribute name="edited" value="aHVzYW47REVTS1RPUC01SThJTjk5OzIwMjEtMDYtMTg7IjAzOjA2OjI2ICI7MjsyODc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <declare name="notaB1, notaB2, notaB3, notaB4, soma, media" type="Real" array="False" size=""/>
+                <assign variable="soma" expression="0"/>
+                <assign variable="media" expression="0"/>
+                <output expression="&quot;Notas do Aluno(a)&quot;" newline="True"/>
+                <for variable="j" start="1" end="4" direction="inc" step="1">
+                    <output expression="&quot;Bimestre &quot; &amp; j" newline="True"/>
+                    <if expression="j = 1">
+                        <then>
+                            <input variable="notaB1"/>
+                            <assign variable="soma" expression="soma + notaB1"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="j = 2">
+                        <then>
+                            <input variable="notaB2"/>
+                            <assign variable="soma" expression="soma + notaB2"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="j = 3">
+                        <then>
+                            <input variable="notaB3"/>
+                            <assign variable="soma" expression="soma + notaB3"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="j = 4">
+                        <then>
+                            <input variable="notaB4"/>
+                            <assign variable="soma" expression="soma + notaB4"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <assign variable="media" expression="(soma / 4)"/>
+                <if expression="media &gt;= 7">
+                    <then>
+                        <output expression="&quot;o aluno foi aprovado&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;o aluno foi reprovado&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

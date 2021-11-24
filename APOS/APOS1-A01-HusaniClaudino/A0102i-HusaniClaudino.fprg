@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="husan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-17 07:48:38 "/>
+        <attribute name="created" value="aHVzYW47REVTS1RPUC01SThJTjk5OzIwMjEtMDYtMTc7IjA3OjM2OjM5ICI7Mjc3NQ=="/>
+        <attribute name="edited" value="aHVzYW47REVTS1RPUC01SThJTjk5OzIwMjEtMDYtMTc7IjA3OjQ4OjM4ICI7MTsyODg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="v1, v2, v3, v4, v5" type="Integer" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe 5 valores, um de cada vez, pressione ENTER a cada n&#250;mero que inserir:&quot;" newline="True"/>
+            <input variable="v1"/>
+            <input variable="v2"/>
+            <input variable="v3"/>
+            <input variable="v4"/>
+            <input variable="v5"/>
+            <assign variable="media" expression="(v1 + v2 + v3 + v4 + v5) / 5"/>
+            <output expression="&quot;A m&#233;dia &#233; &quot; &amp; media" newline="True"/>
+            <if expression="media &gt; 100">
+                <then>
+                    <output expression="&quot;MAIOR&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;MENOR&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
